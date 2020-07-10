@@ -1,3 +1,13 @@
+// ==UserScript==
+// @name         yandex_bot
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://yandex.ru/*
+// @grant        none
+// ==/UserScript==
+
 let keywords = ["Гобой","Как звучит флейта","Тромбон","Что такое валторна","Фагот","Скрипка","Виолончель"];
 let keyword = keywords[getRandom(0,keywords.length)];
 let button = document.getElementsByClassName("search2__button")[0];
